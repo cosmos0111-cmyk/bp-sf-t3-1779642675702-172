@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="organic-stripe">
+    <meta name="bpaas-design-theme" content="kr-organic-stripe">
+    <meta name="description" content="마포 셔츠룸, 주식투자로 번 돈으로 즐기는 합리적인 프리미엄 공간. 시스템과 가격, 위치 정보까지 확인하세요. 010-6279-0862">
+    <meta name="keywords" content="마포 셔츠룸, 마포 주식투자, 마포 셔츠룸 정보, 마포룸 시스템, 마포 셔츠룸 가격, 마포 유흥 정보">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://sf-t3-1779642675702-172.vercel.app/info">
+    <meta property="og:title" content="마포 셔츠룸 | 정보와 시스템 안내">
+    <meta property="og:description" content="마포 셔츠룸, 주식투자로 풀린 돈으로 즐기는 프리미엄 공간. 합리적인 가격과 청결한 시스템, 010-6279-0862">
+    <meta property="og:type" content="website">
+    <title>마포 셔츠룸 | 상세 정보 - 주식투자로 더 특별하게</title>
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: #fafaf9;
+            color: #1c1917;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(250, 250, 249, 0.95);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid #e7e5e4;
+        }
+        .nav-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 64px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            color: #292524;
+            text-decoration: none;
+        }
+        .logo span {
+            color: #78716c;
+        }
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            align-items: center;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #57534e;
+            font-size: 0.875rem;
+            font-weight: 500;
+            transition: color 0.2s;
+            position: relative;
+        }
+        .nav-links a:hover {
+            color: #292524;
+        }
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #292524;
+            transition: width 0.2s;
+        }
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            padding: 4px;
+            background: none;
+            border: none;
+        }
+        .hamburger span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background: #292524;
+            border-radius: 2px;
+            transition: all 0.3s;
+        }
+        .hero {
+            padding: 80px 0 60px;
+        }
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        .hero-vi {
+            /* placeholder for visual */
+        }
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 64px;
+                left: 0;
+                right: 0;
+                background: rgba(250, 250, 249, 0.98);
+                flex-direction: column;
+                padding: 24px;
+                gap: 20px;
+                border-bottom: 1px solid #e7e5e4;
+            }
+            .nav-links.active {
+                display: flex;
+            }
+            .hamburger {
+                display: flex;
+            }
+            .hero-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            .container {
+                padding: 0 16px;
+            }
+        }
+        /* Page specific styles */
+        .page-header {
+            padding: 60px 0 40px;
+            text-align: center;
+        }
+        .page-header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            color: #292524;
+            margin-bottom: 16px;
+        }
+        .page-header p {
+            font-size: 1.125rem;
+            color: #78716c;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .info-section {
+            padding: 40px 0;
+        }
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+        }
+        .info-card {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 32px;
+            border: 1px solid #e7e5e4;
+            transition: box-shadow 0.3s;
+        }
+        .info-card:hover {
+            box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+        }
+        .info-card h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #292524;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .info-card p, .info-card li {
+            color: #57534e;
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+        .info-card ul {
+            list-style: none;
+            padding: 0;
+        }
+        .info-card li {
+            padding: 8px 0;
+            border-bottom: 1px solid #f5f5f4;
+        }
+        .info-card li:last-child {
+            border-bottom: none;
+        }
+        .info-card li::before {
+            content: '•';
+            color: #a8a29e;
+            margin-right: 8px;
+        }
+        .highlight {
+            color: #44403c;
+            font-weight: 600;
+        }
+        .tel-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #292524;
+            color: #fafaf9;
+            padding: 12px 28px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: background 0.2s;
+            margin-top: 16px;
+        }
+        .tel-link:hover {
+            background: #44403c;
+        }
+        .faq-section {
+            padding: 60px 0;
+        }
+        .faq-item {
+            background: #ffffff;
+            border: 1px solid #e7e5e4;
+            border-radius: 8px;
+            padding: 24px;
+            margin-bottom: 12px;
+        }
+        .faq-item h4 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #292524;
+            margin-bottom: 8px;
+        }
+        .faq-item p {
+            color: #78716c;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+        .cta-box {
+            background: #f5f5f4;
+            border-radius: 12px;
+            padding: 48px;
+            text-align: center;
+            margin: 40px 0;
+        }
+        .cta-box h2 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: #292524;
+            margin-bottom: 12px;
+        }
+        .cta-box p {
+            color: #57534e;
+            margin-bottom: 20px;
+        }
+        footer {
+            padding: 40px 0;
+            border-top: 1px solid #e7e5e4;
+            text-align: center;
+            color: #a8a29e;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-inner">
+            <a href="/" class="logo">마포<span>셔츠룸</span></a>
+            <div class="nav-links">
+                <a href="/">홈</a>
+                <a href="/info">정보</a>
+                <a href="/system">시스템</a>
+                <a href="/price">가격</a>
+                <a href="tel:010-6279-0862">010-6279-0862</a>
+            </div>
+            <button class="hamburger" aria-label="메뉴 열기">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <div class="container">
+            <h1>마포 셔츠룸, 제대로 알고 즐기자</h1>
+            <p>주식투자로 번 돈, 현명하게 쓰는 방법. 시스템부터 위치까지 다 알려줄게.</p>
+        </div>
+    </div>
+
+    <section class="info-section">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>📍 위치 & 접근성</h3>
+                    <p>마포구 홍대입구역 근처, 찾기 쉽고 주차도 편해. 차 가지고 와도 걱정 없어. 역에서 걸어서 3분 거리라 술 마셔도 대중교통으로 집에 편하게 가고. 진짜 위치는 예약하면 바로 알려줄게.</p>
+                    <ul>
+                        <li>홍대입구역 도보 3분</li>
+                        <li>주차 가능 (발렛 서비스)</li>
+                        <li>택시 승차장 바로 앞</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <h3>⏰ 운영 시간</h3>
+                    <p>오후 8시부터 새벽 4시까지. 근데 형, 주식장 마감하고 오는 사람들 많아서 10시 이후가 제일 재밌어. 평일에도 사람 꽉 차니까 예약은 필수야.</p>
+                    <ul>
+                        <li>월-일: 20:00 - 04:00</li>
+                        <li>주말/공휴일: 동일</li>
+                        <li>예약 우선 입장</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <h3>💵 가격 시스템</h3>
+                    <p>내가 주식으로 번 돈, 여기서 쓰니까 진짜 값어치 한다. 기본 20만원대부터 시작하는데, 친구랑 같이 오면 할인도 있고. 자세한 건 <a href="/price" style="color:#292524;text-decoration:underline;">가격 페이지</a> 참고하고, 궁금하면 전화해. 010-6279-0862</p>
+                    <ul>
+                        <li>기본 시스템: 22만원~</li>
+                        <li>2인 이상 할인</li>
+                        <li>선결제 시스템 (안전함)</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <h3>🔒 안전 & 청결</h3>
+                    <p>솔직히, 예전에 다른 데 가서 별로였던 적 있었잖아? 여기는 진짜 달라. 방마다 소독하고, 침구는 모두 1회용. 코로나 이후로 더 철저해졌어. 믿고 와도 돼.</p>
+                    <ul>
+                        <li>매일 방역 & 소독</li>
+                        <li>1회용 침구류</li>
+                        <li>CCTV 전 구역 (화장실 제외)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <h2 style="font-size:1.75rem;font-weight:700;color:#292524;margin-bottom:32px;text-align:center;">자주 묻는 질문</h2>
+            <div class="faq-item">
+                <h4>주식투자로 번 돈이라는 게 무슨 뜻이에요?</h4>
+                <p>아, 농담 아니고 진짜야. 여기 오는 형들 중에 오늘 주식으로 200% 먹은 사람들이 꽤 있어. 그 기분 좋은 날, 그 돈으로 더 특별한 경험 하자는 거지. 물론 나도 가끔 손해 볼 때 있지만, 그땐 그냥 분위기 전환하러 오는 거고.</p>
+            </div>
+            <div class="faq-item">
+                <h4>예약은 어떻게 하나요?</h4>
+                <p>전화 한 통이면 끝이야. 010-6279-0862로 연락하면 시간, 인원, 원하는 시스템만 말해줘. 10분이면 예약 완료. 문자로 위치랑 입장 방법 보내줄게.</p>
+            </div>
+            <div class="faq-item">
+                <h4>처음인데 좀 부끄러워요...</h4>
+                <p>형, 누구나 처음은 있잖아. 직원들이 친절하게 안내해주니까 긴장하지 마. 그리고 처음 오는 사람들한테는 시스템 설명도 따로 해줘. 부담 없이 와.</p>
+            </div>
+            <div class="faq-item">
+                <h4>환불 규정이 어떻게 되나요?</h4>
+                <p>입장 전까지는 100% 환불 가능하고, 입장 후에는 상황에 따라 협의. 근데 보통은 다들 만족하고 끝까지 즐기더라고. 괜히 걱정하지 마.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="cta-box">
+            <h2>오늘, 주식으로 번 돈으로 특별한 밤을</h2>
+            <p>합리적인 가격, 청결한 시스템, 그리고 진짜 편안한 공간. 마포 셔츠룸이 기다리고 있어.</p>
+            <a href="tel:010-6279-0862" class="tel-link">📞 010-6279-0862로 전화하기</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>마포 셔츠룸 | 주식투자로 더 특별하게 | 010-6279-0862</p>
+            <p style="margin-top:8px;">© 2025 All rights reserved. 합리적인 가격, 청결한 시스템.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.hamburger')?.addEventListener('click', function() {
+            document.querySelector('.nav-links')?.classList.toggle('active');
+        });
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('.nav-links')?.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
